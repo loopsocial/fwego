@@ -61,6 +61,9 @@ export interface BoxProps
   fontFamily?: ResponsiveString
   fontSize?: ResponsiveFontSize | ResponsiveSize
   fontWeight?: FontWeight
+  gap?: ResponsiveString
+  gridAutoFlow?: ResponsiveString
+  gridAutoColumns?: ResponsiveString
   gridArea?: ResponsiveString
   gridColumn?: ResponsiveString
   gridRow?: ResponsiveString

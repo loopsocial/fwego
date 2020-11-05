@@ -150,6 +150,16 @@ const styleConfig: StyleConfig = {
   gridRow: {
     name: 'grid-row'
   },
+  gap: {
+    name: 'gap',
+    transformer: spaceTransformer
+  },
+  gridAutoFlow: {
+    name: 'grid-auto-flow'
+  },
+  gridAutoColumns: {
+    name: 'grid-auto-columns'
+  },
   gridTemplateColumns: {
     name: 'grid-template-columns'
   },

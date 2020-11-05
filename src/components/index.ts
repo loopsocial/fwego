@@ -13,6 +13,8 @@ export {
   ComboboxOptionText
 } from './Combobox/Combobox'
 export { Flex } from './Flex/Flex'
+export { Grid } from './Grid/Grid'
+export type { GridProps } from './Grid/Grid'
 export { Heading } from './Heading/Heading'
 export type { HeadingProps } from './Heading/Heading'
 export { Inline } from './Inline/Inline'

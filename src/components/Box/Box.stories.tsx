@@ -155,7 +155,7 @@ export const ResponsiveSpacing: React.FC<{}> = () => {
   return (
     <Flex>
       <ResponsiveSpacingBox p={['none', 'small', 'medium', 'large']}>
-        <Text>p=&#123;{"['none', 'small', 'medium',  'large']"}&#125;</Text>
+        <Text>p=&#123;{"['none', 'small', 'medium', 'large']"}&#125;</Text>
       </ResponsiveSpacingBox>
       <ResponsiveSpacingBox m={['xsmall', 'medium', 'xlarge']}>
         <Text>m=&#123;{"['xsmall', 'medium', 'xlarge']"}&#125;</Text>
