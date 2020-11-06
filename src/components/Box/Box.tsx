@@ -16,8 +16,18 @@ export type ResponsiveProp = string | number | Array<string> | Array<number>
 export type Overflow = 'visible' | 'hidden' | 'scroll' | 'auto'
 export type ResponsiveOverflow = Overflow | Array<Overflow>
 
+type Elements = React.HTMLAttributes<HTMLElement> &
+  React.AnchorHTMLAttributes<HTMLAnchorElement> &
+  React.AudioHTMLAttributes<HTMLAudioElement> &
+  React.ButtonHTMLAttributes<HTMLButtonElement> &
+  React.ImgHTMLAttributes<HTMLImageElement> &
+  React.InputHTMLAttributes<HTMLInputElement> &
+  React.LabelHTMLAttributes<HTMLLabelElement> &
+  React.TextareaHTMLAttributes<HTMLTextAreaElement> &
+  React.VideoHTMLAttributes<HTMLVideoElement>
+
 export interface BoxProps
-  extends Omit<React.HTMLAttributes<HTMLElement>, 'color'> {
+  extends Omit<Elements, 'color' | 'height' | 'width' | 'size'> {
   alignContent?: ResponsiveString
   alignItems?: ResponsiveString
   alignSelf?: ResponsiveString
@@ -108,7 +118,6 @@ export interface BoxProps
   right?: ResponsiveSize
   rowGap?: ResponsiveSpace
   size?: ResponsiveFontSize | ResponsiveSize
-  src?: string
   textAlign?: ResponsiveString
   textDecoration?: ResponsiveString
   textOverflow?: ResponsiveString
