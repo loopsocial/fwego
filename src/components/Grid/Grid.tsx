@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react'
 import { Box } from '../Box/Box'
 import type { BoxProps, ResponsiveString } from '../Box/Box'
 
-export interface GridProps extends BoxProps {
+export interface GridProps extends Omit<BoxProps, 'rows'> {
   columns?: ResponsiveString
   rows?: ResponsiveString
 }

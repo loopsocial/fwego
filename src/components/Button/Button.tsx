@@ -28,7 +28,6 @@ export const Button = forwardRef(
       <Box
         as={as}
         ref={ref}
-        // @ts-ignore FIXME
         type={as === 'button' ? type : undefined}
         fwcss={fwcss}
         fwelement="button"

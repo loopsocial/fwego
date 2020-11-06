@@ -38,7 +38,6 @@ export const Radio = forwardRef(
         as="label"
         display="flex"
         alignItems="center"
-        // @ts-ignore
         htmlFor={id}
         m="0"
         css={css`
@@ -51,11 +50,9 @@ export const Radio = forwardRef(
         <Box
           as="input"
           display="none"
-          // @ts-ignore
           checked={checked}
           defaultChecked={defaultChecked}
           id={id}
-          // @ts-ignore
           name={name}
           onChange={onChange}
           ref={ref}
