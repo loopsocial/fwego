@@ -19,6 +19,7 @@ export const Modal = forwardRef(
     ref: React.Ref<HTMLDivElement>
   ) => {
     return (
+      // @ts-ignore
       <Box
         as={DialogOverlay}
         ref={ref}
@@ -50,6 +51,7 @@ export const ModalContent = forwardRef(
     ref: React.Ref<HTMLDivElement>
   ) => {
     return (
+      // @ts-ignore
       <Box
         as={DialogContent}
         ref={ref}
