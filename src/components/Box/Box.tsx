@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React, { forwardRef } from 'react'
+import React, { Attributes, forwardRef } from 'react'
 import { jsx } from '@emotion/core'
 import { useTheme } from '../../hooks'
 import { partitionStyleProps, combineCssProperties } from '../../utils'
@@ -16,18 +16,11 @@ export type ResponsiveProp = string | number | Array<string> | Array<number>
 export type Overflow = 'visible' | 'hidden' | 'scroll' | 'auto'
 export type ResponsiveOverflow = Overflow | Array<Overflow>
 
-type Elements = React.HTMLAttributes<HTMLElement> &
-  React.AnchorHTMLAttributes<HTMLAnchorElement> &
-  React.AudioHTMLAttributes<HTMLAudioElement> &
-  React.ButtonHTMLAttributes<HTMLButtonElement> &
-  React.ImgHTMLAttributes<HTMLImageElement> &
-  React.InputHTMLAttributes<HTMLInputElement> &
-  React.LabelHTMLAttributes<HTMLLabelElement> &
-  React.TextareaHTMLAttributes<HTMLTextAreaElement> &
-  React.VideoHTMLAttributes<HTMLVideoElement>
-
 export interface BoxProps
-  extends Omit<Elements, 'color' | 'height' | 'width' | 'size'> {
+  extends Omit<
+    React.AllHTMLAttributes<Attributes>,
+    'as' | 'color' | 'height' | 'width' | 'size'
+  > {
   alignContent?: ResponsiveString
   alignItems?: ResponsiveString
   alignSelf?: ResponsiveString
