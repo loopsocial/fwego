@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React, { forwardRef } from 'react'
+import React, { Attributes, forwardRef } from 'react'
 import { jsx } from '@emotion/core'
 import { useTheme } from '../../hooks'
 import { partitionStyleProps, combineCssProperties } from '../../utils'
@@ -17,7 +17,10 @@ export type Overflow = 'visible' | 'hidden' | 'scroll' | 'auto'
 export type ResponsiveOverflow = Overflow | Array<Overflow>
 
 export interface BoxProps
-  extends Omit<React.HTMLAttributes<HTMLElement>, 'color'> {
+  extends Omit<
+    React.AllHTMLAttributes<Attributes>,
+    'as' | 'color' | 'height' | 'width' | 'size'
+  > {
   alignContent?: ResponsiveString
   alignItems?: ResponsiveString
   alignSelf?: ResponsiveString
@@ -108,7 +111,6 @@ export interface BoxProps
   right?: ResponsiveSize
   rowGap?: ResponsiveSpace
   size?: ResponsiveFontSize | ResponsiveSize
-  src?: string
   textAlign?: ResponsiveString
   textDecoration?: ResponsiveString
   textOverflow?: ResponsiveString

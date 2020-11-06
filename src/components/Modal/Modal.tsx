@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react'
 import { DialogOverlay, DialogContent } from '@reach/dialog'
 import type { DialogProps, DialogContentProps } from '@reach/dialog'
-import { Box } from '../Box/Box'
+import { Box, BoxProps } from '../Box/Box'
 
 const modalFwcss = {
   bg: 'rgba(0, 0, 0, .3)',
@@ -15,7 +15,7 @@ const modalFwcss = {
 
 export const Modal = forwardRef(
   (
-    { children, ...props }: DialogProps & React.HTMLAttributes<HTMLDivElement>,
+    { children, ...props }: DialogProps & BoxProps,
     ref: React.Ref<HTMLDivElement>
   ) => {
     return (
@@ -46,7 +46,7 @@ const modalContentFwcss = {
 
 export const ModalContent = forwardRef(
   (
-    { children, ...props }: DialogContentProps,
+    { children, ...props }: DialogContentProps & BoxProps,
     ref: React.Ref<HTMLDivElement>
   ) => {
     return (
