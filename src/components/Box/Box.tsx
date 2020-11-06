@@ -108,6 +108,7 @@ export interface BoxProps
   right?: ResponsiveSize
   rowGap?: ResponsiveSpace
   size?: ResponsiveFontSize | ResponsiveSize
+  src?: string
   textAlign?: ResponsiveString
   textDecoration?: ResponsiveString
   textOverflow?: ResponsiveString
