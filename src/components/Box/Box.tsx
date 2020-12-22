@@ -152,6 +152,31 @@ export const Box = forwardRef(
     const Component = as
     const [forwardedProps, styleProps] = partitionStyleProps(props, styleConfig)
 
+    if (as === 'img') {
+      // Lighthouse perf tool recommends usage
+      // of width and height html attributes for
+      // all images
+      if (props.width !== undefined) {
+        try {
+          const parsed = parseInt(`${props.width}`, 10)
+          if (!isNaN(parsed) && parsed.toString() === props.width.toString()) {
+            forwardedProps.width = props.width
+          }
+          // eslint-disable-next-line no-empty
+        } catch (err) {}
+      }
+
+      if (props.height !== undefined) {
+        try {
+          const parsed = parseInt(`${props.height}`, 10)
+          if (!isNaN(parsed) && parsed.toString() === props.height.toString()) {
+            forwardedProps.height = props.height
+          }
+          // eslint-disable-next-line no-empty
+        } catch (err) {}
+      }
+    }
+
     let elementStyles = {}
     if (fwelement && fwelement in theme) {
       elementStyles = theme[fwelement]
