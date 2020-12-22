@@ -1,6 +1,6 @@
 {
   "name": "fwego",
-  "version": "0.17.2",
+  "version": "0.18.0",
   "author": "Ben Hansen <bnhansn@gmail.com>",
   "description": "Fwego UI",
   "repository": "loopsocial/fwego",
@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
-    "@emotion/core": "^10.0.28",
+    "@emotion/core": "^11.0.0",
     "@reach/combobox": "^0.10.4",
     "@reach/dialog": "^0.10.4",
     "@reach/menu-button": "^0.11.2",
@@ -58,9 +58,9 @@
     "lint-staged": "^10.2.1",
     "lodash": "^4.17.15",
     "prettier": "^2.0.5",
-    "react": "^16.13.1",
+    "react": "^17.0.1",
     "react-docgen-typescript-loader": "^3.7.2",
-    "react-dom": "^16.13.1",
+    "react-dom": "^17.0.1",
     "rollup": "^2.7.6",
     "rollup-plugin-peer-deps-external": "^2.2.2",
     "rollup-plugin-typescript2": "^0.27.0",
@@ -70,13 +70,13 @@
     "typescript": "^3.8.3"
   },
   "peerDependencies": {
-    "@emotion/core": "^10.0.28",
+    "@emotion/core": "^10.0.0 || ^11.0.0",
     "@reach/combobox": "^0.10.4",
     "@reach/dialog": "^0.10.4",
     "@reach/menu-button": "^0.11.2",
-    "lodash": "^4.17.15",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "lodash": "^4.0.0",
+    "react": "^16.0.0 || ^17.0.0",
+    "react-dom": "^16.0.0 || ^17.0.0"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
