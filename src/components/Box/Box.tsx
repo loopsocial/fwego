@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React, { forwardRef } from 'react'
-import { jsx } from '@emotion/core'
+import { css, jsx } from '@emotion/core'
 import { useTheme } from '../../hooks'
 import { partitionStyleProps, combineCssProperties } from '../../utils'
 import type { FontSize, FontWeight } from '../../theme/fonts'
@@ -21,6 +21,7 @@ export interface BoxProps
     React.AllHTMLAttributes<{}>,
     'as' | 'color' | 'height' | 'width' | 'size'
   > {
+  css?: ReturnType<css>
   alignContent?: ResponsiveString
   alignItems?: ResponsiveString
   alignSelf?: ResponsiveString

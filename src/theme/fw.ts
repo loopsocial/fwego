@@ -4,8 +4,9 @@ const fontFamily =
   'Avenir Next, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif'
 
 export const colors = {
-  primaryGradient: 'linear-gradient(254deg, #f78361, #f54b64)',
-  primary: '#ff7061',
+  primaryGradient:
+    'linear-gradient(170deg, #ff720d 16%, #fe177a 61%, #a40ff4 108%)',
+  primary: '#ff720d',
   blk1: '#121212',
   gray1: '#171717',
   gray2: '#2b2b2b',
