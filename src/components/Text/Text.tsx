@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React, { forwardRef } from 'react'
-import { jsx } from '@emotion/core'
+import { jsx } from '@emotion/react'
 import { Box } from '../Box/Box'
 import type { BoxProps } from '../Box/Box'
 import useBaselineStyles from './useBaselineStyles'
