@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from 'react'
-import { css, jsx } from '@emotion/core'
+import { css, jsx } from '@emotion/react'
 import { useTheme } from '../../hooks'
 import { FWThemeProvider } from '../../models/FWThemeProvider'
 import { Box, Inline, Flex, Text } from '../'

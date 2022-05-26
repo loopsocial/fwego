@@ -12,11 +12,6 @@ test('it renders an inline row with medium space by default', () => {
 
   expect(container).toMatchInlineSnapshot(`
     .emotion-0 {
-      margin-top: -16px;
-      -webkit-box-pack: start;
-      -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-      justify-content: flex-start;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -30,16 +25,22 @@ test('it renders an inline row with medium space by default', () => {
       -webkit-flex-direction: row;
       -ms-flex-direction: row;
       flex-direction: row;
+      -webkit-box-flex-wrap: wrap;
       -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      margin-top: -16px;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
     }
 
-    .emotion-0 > * {
+    .emotion-0 >* {
       margin-top: 16px;
     }
 
-    .emotion-0 > *:not(:last-child) {
+    .emotion-0 >*:not(:last-child) {
       margin-right: 16px;
     }
 
@@ -68,11 +69,6 @@ test('it changes space between children with the space prop', () => {
 
   expect(container).toMatchInlineSnapshot(`
     .emotion-0 {
-      margin-top: -12px;
-      -webkit-box-pack: start;
-      -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-      justify-content: flex-start;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -86,16 +82,22 @@ test('it changes space between children with the space prop', () => {
       -webkit-flex-direction: row;
       -ms-flex-direction: row;
       flex-direction: row;
+      -webkit-box-flex-wrap: wrap;
       -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      margin-top: -12px;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
     }
 
-    .emotion-0 > * {
+    .emotion-0 >* {
       margin-top: 12px;
     }
 
-    .emotion-0 > *:not(:last-child) {
+    .emotion-0 >*:not(:last-child) {
       margin-right: 12px;
     }
 
@@ -124,11 +126,6 @@ test('it aligns children to a side with the align prop', () => {
 
   expect(container).toMatchInlineSnapshot(`
     .emotion-0 {
-      margin-top: -16px;
-      -webkit-box-pack: end;
-      -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -142,16 +139,22 @@ test('it aligns children to a side with the align prop', () => {
       -webkit-flex-direction: row;
       -ms-flex-direction: row;
       flex-direction: row;
+      -webkit-box-flex-wrap: wrap;
       -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      margin-top: -16px;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      -webkit-justify-content: flex-end;
+      justify-content: flex-end;
     }
 
-    .emotion-0 > * {
+    .emotion-0 >* {
       margin-top: 16px;
     }
 
-    .emotion-0 > *:not(:first-child) {
+    .emotion-0 >*:not(:first-child) {
       margin-left: 16px;
     }
 

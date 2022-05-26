@@ -1,5 +1,5 @@
-import { css } from '@emotion/core'
-import type { SerializedStyles } from '@emotion/core'
+import { css } from '@emotion/react'
+import type { SerializedStyles } from '@emotion/react'
 import { useTheme } from '../../hooks'
 import type { Size } from '../Box/Box'
 import type { Theme } from '../../theme/theme'

@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React, { forwardRef } from 'react'
-import { css, jsx } from '@emotion/core'
+import { css, jsx } from '@emotion/react'
 import useSpace from '../../hooks/useSpace'
 import type { Space } from '../../theme/spaces'
 import { Box } from '../Box/Box'

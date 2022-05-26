@@ -12,7 +12,7 @@ import type {
   ComboboxListProps,
   ComboboxOptionProps
 } from '@reach/combobox'
-import { css, jsx } from '@emotion/core'
+import { css, jsx } from '@emotion/react'
 import { Box } from '../Box/Box'
 import { Input } from '../Input/Input'
 
