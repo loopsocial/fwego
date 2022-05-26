@@ -36,14 +36,15 @@ test('it renders baseline text', () => {
 
   expect(container).toMatchInlineSnapshot(`
     .emotion-0 {
-      line-height: 1;
-      -webkit-transform: translateY(2px);
-      -ms-transform: translateY(2px);
-      transform: translateY(2px);
       display: block;
       box-sizing: border-box;
       min-width: 0px;
       font-size: 16px;
+      line-height: 1;
+      -webkit-transform: translateY(2px);
+      -moz-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+      transform: translateY(2px);
     }
 
     .emotion-0:before {
@@ -72,14 +73,15 @@ test('it renders different baseline styles based on size prop', () => {
 
   expect(container).toMatchInlineSnapshot(`
     .emotion-0 {
-      line-height: 1;
-      -webkit-transform: translateY(5px);
-      -ms-transform: translateY(5px);
-      transform: translateY(5px);
       display: block;
       box-sizing: border-box;
       min-width: 0px;
       font-size: 32px;
+      line-height: 1;
+      -webkit-transform: translateY(5px);
+      -moz-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+      transform: translateY(5px);
     }
 
     .emotion-0:before {

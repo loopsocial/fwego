@@ -17,7 +17,7 @@ test('it renders a stack with medium space by default', () => {
       min-width: 0px;
     }
 
-    .emotion-0 > *:not(:last-child) {
+    .emotion-0 >*:not(:last-child) {
       margin-bottom: 16px;
     }
 
@@ -51,7 +51,7 @@ test('it changes space between children with the space prop', () => {
       min-width: 0px;
     }
 
-    .emotion-0 > *:not(:last-child) {
+    .emotion-0 >*:not(:last-child) {
       margin-bottom: 12px;
     }
 
