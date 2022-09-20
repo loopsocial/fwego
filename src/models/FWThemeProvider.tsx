@@ -6,7 +6,7 @@ import type { Theme } from '../theme/theme'
 
 type Props = {
   theme?: 'light' | 'dark'
-  font?: 'string'
+  font?: string
   children: React.ReactNode
 }
 
