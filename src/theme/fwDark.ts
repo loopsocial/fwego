@@ -87,7 +87,6 @@ const darkOverrides = {
   }
 }
 
-const fwDarkTheme = (font?: string): Theme =>
-  merge(fwTheme(font), darkOverrides)
+const fwDarkTheme = (font: string): Theme => merge(fwTheme(font), darkOverrides)
 
 export default fwDarkTheme
