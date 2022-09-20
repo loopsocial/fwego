@@ -83,7 +83,7 @@ const lightOverrides = {
   }
 }
 
-const fwLightTheme = (font?: string): Theme =>
+const fwLightTheme = (font: string): Theme =>
   merge(fwTheme(font), lightOverrides)
 
 export default fwLightTheme

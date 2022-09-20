@@ -34,9 +34,7 @@ const fontOffsets = {
   xxxlarge: ['6px', '8px']
 }
 
-const fwTheme = (
-  fontFamily = 'Avenir Next, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif'
-): Theme => ({
+const fwTheme = (fontFamily: string): Theme => ({
   colors: colors,
   fontSizes: fontSizes,
   fontOffsets: fontOffsets,

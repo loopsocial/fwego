@@ -11,11 +11,14 @@ type Props = {
 }
 
 const mapTheme = (theme?: 'light' | 'dark', font?: string): Theme => {
+  const defaultFont =
+    'Avenir Next, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif'
+  const fontFamily = font ? font.concat(', ', defaultFont) : defaultFont
   switch (theme) {
     case 'light':
-      return fwThemeLight(font)
+      return fwThemeLight(fontFamily)
     default:
-      return fwThemeDark(font)
+      return fwThemeDark(fontFamily)
   }
 }
 
