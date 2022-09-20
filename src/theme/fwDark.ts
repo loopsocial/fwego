@@ -1,5 +1,4 @@
 import merge from 'lodash/merge'
-import cloneDeep from 'lodash/cloneDeep'
 import type { Theme } from './theme'
 import fwTheme, { colors } from './fw'
 
@@ -88,6 +87,6 @@ const darkOverrides = {
   }
 }
 
-const fwDarkTheme: Theme = merge(cloneDeep(fwTheme), darkOverrides)
+const fwDarkTheme = (font): Theme => merge(fwTheme(font), darkOverrides)
 
 export default fwDarkTheme

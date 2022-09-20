@@ -6,23 +6,25 @@ import type { Theme } from '../theme/theme'
 
 type Props = {
   theme?: 'light' | 'dark'
+  font?: 'string'
   children: React.ReactNode
 }
 
-const mapTheme = (theme?: 'light' | 'dark'): Theme => {
+const mapTheme = (theme?: 'light' | 'dark', font?: string): Theme => {
   switch (theme) {
     case 'light':
-      return fwThemeLight
+      return fwThemeLight(font)
     default:
-      return fwThemeDark
+      return fwThemeDark(font)
   }
 }
 
 export const FWThemeProvider: React.FC<Props> = ({
   theme,
+  font,
   children
 }: Props) => {
-  return <ThemeProvider theme={mapTheme(theme)}>{children}</ThemeProvider>
+  return <ThemeProvider theme={mapTheme(theme, font)}>{children}</ThemeProvider>
 }
 
 FWThemeProvider.displayName = 'FWThemeProvider'
