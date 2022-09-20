@@ -1,8 +1,5 @@
 import type { Theme } from './theme'
 
-const fontFamily =
-  'Avenir Next, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif'
-
 export const colors = {
   primaryGradient:
     'linear-gradient(170deg, #ff720d 16%, #fe177a 61%, #a40ff4 108%)',
@@ -37,7 +34,9 @@ const fontOffsets = {
   xxxlarge: ['6px', '8px']
 }
 
-const fwTheme: Theme = {
+const fwTheme = (
+  fontFamily = 'Avenir Next, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif'
+): Theme => ({
   colors: colors,
   fontSizes: fontSizes,
   fontOffsets: fontOffsets,
@@ -162,6 +161,6 @@ const fwTheme: Theme = {
       }
     }
   }
-}
+})
 
 export default fwTheme
